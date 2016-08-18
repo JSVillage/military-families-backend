@@ -2,9 +2,6 @@
   "name": "Events",
   "base": "PersistedModel",
   "idInjection": true,
-  "options": {
-    "validateUpsert": true
-  },
   "properties": {
     "name": {
       "type": "string",
@@ -14,17 +11,14 @@
       "type": "string",
       "default": ""
     },
-    "address": {
-      "type": "object",
-      "default": {}
-    },
     "date": {
       "type": "date",
       "default": ""
     }
   },
   "validations": [],
-  "relations": "address": {
+  "relations": {
+  "address": {
       "type": "embedsOne",
       "model": "Address",
       "property": "eventAddress",
