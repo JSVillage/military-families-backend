@@ -25,7 +25,7 @@
   },
   "validations": [],
   "relations": {
-    "eventsaddres12": {
+    "Address": {
       "type": "hasOne",
       "model": "EventsAddress",
       "foreignKey": ""

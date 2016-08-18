@@ -24,13 +24,7 @@
     }
   },
   "validations": [],
-  "relations": {
-    "eventsaddress": {
-      "type": "belongsTo",
-      "model": "Events",
-      "foreignKey": ""
-    }
-  },
+  "relations": {},
   "acls": [],
   "methods": {}
 }
