@@ -40,7 +40,7 @@
     "dataSource": "MongoDB",
     "public": true
   },
-  "EventsAddress": {
+  "Address": {
     "dataSource": "MongoDB",
     "public": true
   }

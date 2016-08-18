@@ -24,13 +24,15 @@
     }
   },
   "validations": [],
-  "relations": {
-    "Address": {
-      "type": "hasOne",
-      "model": "EventsAddress",
-      "foreignKey": ""
-    }
-  },
+  "relations": "address": {
+      "type": "embedsOne",
+      "model": "Address",
+      "property": "eventAddress",
+      "options": {
+        "validate": true,
+        "forceId": false
+      }
+    },
   "acls": [],
   "methods": {}
 }

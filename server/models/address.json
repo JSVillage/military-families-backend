@@ -1,26 +1,22 @@
 {
-  "name": "EventsAddress",
+  "name": "Address",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
     "validateUpsert": true
   },
   "properties": {
-    "address": {
-      "type": "string",
-      "default": ""
+    "street": {
+      "type": "string"
     },
     "city": {
-      "type": "string",
-      "default": ""
+      "type": "string"
     },
     "state": {
-      "type": "string",
-      "default": ""
+      "type": "string"
     },
-    "zip": {
-      "type": "string",
-      "default": ""
+    "zipCode": {
+      "type": "string"
     }
   },
   "validations": [],
