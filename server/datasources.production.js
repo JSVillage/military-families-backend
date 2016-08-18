@@ -1,5 +1,3 @@
-console.log('PRODUCTION CONFIG')
-
 module.exports = {
   "MongoDB": {
     "url": process.env.MONGO_URL,
