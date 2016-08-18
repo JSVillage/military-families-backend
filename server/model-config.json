@@ -42,6 +42,6 @@
   },
   "Address": {
     "dataSource": "MongoDB",
-    "public": true
+    "public": false
   }
 }
