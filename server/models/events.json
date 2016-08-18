@@ -20,7 +20,7 @@
     },
     "date": {
       "type": "date",
-      "default": null
+      "default": ""
     }
   },
   "validations": [],
