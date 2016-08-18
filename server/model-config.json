@@ -42,6 +42,10 @@
   },
   "Address": {
     "dataSource": "MongoDB",
-    "public": false
+    "public": true
+  },
+  "ForumAnswers": {
+    "dataSource": "MongoDB",
+    "public": true
   }
 }

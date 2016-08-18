@@ -1,0 +1,22 @@
+{
+    "name": "ForumAnswers",
+    "base": "Model",
+    "idInjection": true,
+    "options": {
+        "validateUpsert": true
+    },
+    "properties": {
+        "answers": {
+            "type": "string",
+            "default": ""
+        },
+        "date": {
+            "type": "date",
+            "default": null
+        }
+    },
+    "validations": [],
+    "relations": {},
+    "acls": [],
+    "methods": {}
+}

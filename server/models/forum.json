@@ -1,28 +1,36 @@
 {
-  "name": "Forum",
-  "base": "PersistedModel",
-  "idInjection": true,
-  "options": {
-    "validateUpsert": true
-  },
-  "properties": {
-    "question": {
-      "type": "string",
-      "default": ""
+    "name": "Forum",
+    "base": "PersistedModel",
+    "idInjection": true,
+    "options": {
+        "validateUpsert": true
     },
-    "answers": {
-      "type": [
-        "object"
-      ],
-      "default": "{}"
+    "properties": {
+        "question": {
+            "type": "string",
+            "default": ""
+        },
+         "description": {
+            "type": "string",
+            "default": ""
+        },
+        "date": {
+            "type": "date",
+            "default": ""
+        }
     },
-    "date": {
-      "type": "date",
-      "default": ""
-    }
-  },
-  "validations": [],
-  "relations": {},
-  "acls": [],
-  "methods": {}
+    "validations": [],
+    "relations": {
+        "forum-answers": {
+            "type": "embedsMany",
+            "model": "ForumAnswers",
+            "property": "forumanswers",
+            "options": {
+                "validate": true,
+                "forceId": false
+            }
+        }
+    },
+    "acls": [],
+    "methods": {}
 }
