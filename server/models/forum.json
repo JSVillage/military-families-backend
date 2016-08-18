@@ -1,0 +1,28 @@
+{
+  "name": "Forum",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "question": {
+      "type": "string",
+      "default": ""
+    },
+    "answers": {
+      "type": [
+        "object"
+      ],
+      "default": "{}"
+    },
+    "date": {
+      "type": "date",
+      "default": null
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

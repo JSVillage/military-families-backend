@@ -1,0 +1,36 @@
+{
+  "name": "EventsAddress",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "address": {
+      "type": "string",
+      "default": ""
+    },
+    "city": {
+      "type": "string",
+      "default": ""
+    },
+    "state": {
+      "type": "string",
+      "default": ""
+    },
+    "zip": {
+      "type": "string",
+      "default": ""
+    }
+  },
+  "validations": [],
+  "relations": {
+    "eventsaddress": {
+      "type": "belongsTo",
+      "model": "Events",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
