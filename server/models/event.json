@@ -1,0 +1,27 @@
+{
+  "name": "Event",
+  "plural": "events",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "default": ""
+    },
+    "description": {
+      "type": "string",
+      "default": ""
+    },
+    "address": {
+      "type": "object",
+      "default": {}
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
