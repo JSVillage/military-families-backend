@@ -10,11 +10,11 @@
             "type": "string",
             "default": ""
         },
-         "description": {
+        "description": {
             "type": "string",
             "default": ""
         },
-        "date": {
+        "presentDate": {
             "type": "date"
         }
     },
@@ -24,9 +24,8 @@
             "type": "embedsMany",
             "model": "ForumAnswers",
             "property": "answerList",
-            "options": {
-                "validate": false,
-                "forceId": false
+            "scope": {
+                "include": "linked"
             }
         }
     },

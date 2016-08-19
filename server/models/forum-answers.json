@@ -3,18 +3,28 @@
     "base": "PersistedModel",
     "idInjection": true,
     "properties": {
+        "id": {
+            "type": "number",
+            "id": true
+        },
         "userAnswers": {
             "type": "string",
             "default": ""
         },
         "date": {
-            "type": "date",
-            "default": ""
+            "type": "date"
 
         }
     },
     "validations": [],
-    "relations": {},
+    "relations": {
+        "linked": {
+            "type": "belongsTo",
+            "options": {
+                "invertProperties": true
+            }
+        }
+    },
     "acls": [],
     "methods": {}
 }
