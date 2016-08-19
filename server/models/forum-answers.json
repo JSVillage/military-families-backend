@@ -22,7 +22,13 @@
             "type": "belongsTo",
             "options": {
                 "invertProperties": true
-            }
+            },
+            "polymorphic": {
+                "idType": "number"
+            },
+            "properties": {
+                "name": "name"
+            },
         }
     },
     "acls": [],
