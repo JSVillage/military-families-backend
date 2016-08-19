@@ -4,16 +4,20 @@
   "idInjection": true,
   "properties": {
     "street": {
-      "type": "string"
+      "type": "string",
+      "default": ""
     },
     "city": {
-      "type": "string"
+      "type": "string",
+      "default": ""
     },
     "state": {
-      "type": "string"
+      "type": "string",
+      "default": ""
     },
     "zip": {
-      "type": "string"
+      "type": "string",
+      "default": ""
     }
   },
   "validations": [],

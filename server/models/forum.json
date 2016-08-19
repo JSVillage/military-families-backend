@@ -15,7 +15,8 @@
             "default": ""
         },
         "date": {
-            "type": "date"
+            "type": "date",
+            "default": ""
         }
     },
     "validations": [],
