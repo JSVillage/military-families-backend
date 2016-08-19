@@ -23,7 +23,6 @@
         "answers": {
             "type": "embedsMany",
             "model": "ForumAnswers",
-            "property": "answerList",
             "scope": {
                 "include": "linked"
             }
