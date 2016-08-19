@@ -1,3 +1,3 @@
-module.exports = function(Forumanswers) {
+module.exports = function(ForumAnswers) {
 
 };
