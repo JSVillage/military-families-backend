@@ -4,12 +4,10 @@
     "idInjection": true,
     "properties": {
         "name": {
-            "type": "string",
-            "default": ""
+            "type": "string"
         },
         "description": {
-            "type": "string",
-            "default": ""
+            "type": "string"
         },
         "date": {
             "type": "date"
@@ -21,10 +19,10 @@
             "type": "embedsOne",
             "model": "Address",
             "property": "eventAddress",
-            "options": {
-                "validate": true,
-                "forceId": false
-            }
+        "options": {
+            "validate": true,
+            "forceId": false
+        }
         }
     },
     "acls": [],
