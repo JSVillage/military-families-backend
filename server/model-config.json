@@ -32,7 +32,19 @@
     "dataSource": "db",
     "public": false
   },
-  "Event": {
+  "Events": {
+    "dataSource": "MongoDB",
+    "public": true
+  },
+  "Forum": {
+    "dataSource": "MongoDB",
+    "public": true
+  },
+  "Address": {
+    "dataSource": "MongoDB",
+    "public": true
+  },
+  "ForumAnswers": {
     "dataSource": "MongoDB",
     "public": true
   }

@@ -1,0 +1,33 @@
+{
+    "name": "Events",
+    "base": "PersistedModel",
+    "idInjection": true,
+    "properties": {
+        "name": {
+            "type": "string"
+        },
+        "description": {
+            "type": "string"
+        },
+        "eventDate": {
+            "type": "string"
+        },
+        "presentDate": {
+            "type": "date"
+        }
+    },
+    "validations": [],
+    "relations": {
+        "address": {
+            "type": "embedsOne",
+            "model": "Address",
+            "property": "eventAddress",
+            "options": {
+                "validate": true,
+                "forceId": false
+            }
+        }
+    },
+    "acls": [],
+    "methods": {}
+}

@@ -1,23 +1,23 @@
 {
-  "name": "Event",
-  "plural": "events",
-  "base": "PersistedModel",
+  "name": "Address",
+  "base": "Model",
   "idInjection": true,
-  "options": {
-    "validateUpsert": true
-  },
   "properties": {
-    "name": {
+    "street": {
       "type": "string",
       "default": ""
     },
-    "description": {
+    "city": {
       "type": "string",
       "default": ""
     },
-    "address": {
-      "type": "object",
-      "default": {}
+    "state": {
+      "type": "string",
+      "default": ""
+    },
+    "zip": {
+      "type": "string",
+      "default": ""
     }
   },
   "validations": [],

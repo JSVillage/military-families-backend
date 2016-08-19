@@ -1,0 +1,34 @@
+{
+    "name": "Forum",
+    "base": "PersistedModel",
+    "idInjection": true,
+    "options": {
+        "validateUpsert": true
+    },
+    "properties": {
+        "question": {
+            "type": "string",
+            "default": ""
+        },
+        "description": {
+            "type": "string",
+            "default": ""
+        },
+        "presentDate": {
+            "type": "date"
+        }
+    },
+    "validations": [],
+    "relations": {
+        "answers": {
+            "type": "embedsMany",
+            "model": "ForumAnswers",
+            "property": "answerList",
+            "scope": {
+                "include": "linked"
+            }
+        }
+    },
+    "acls": [],
+    "methods": {}
+}

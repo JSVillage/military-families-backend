@@ -1,0 +1,36 @@
+{
+    "name": "ForumAnswers",
+    "base": "Model",
+    "idInjection": true,
+    "properties": {
+        "id": {
+            "type": "number",
+            "id": true
+        },
+        "userAnswers": {
+            "type": "string",
+            "default": ""
+        },
+        "date": {
+            "type": "date"
+
+        }
+    },
+    "validations": [],
+    "relations": {
+        "linked": {
+            "type": "belongsTo",
+            "options": {
+                "invertProperties": true
+            },
+            "polymorphic": {
+                "idType": "number"
+            },
+            "properties": {
+                "name": "name"
+            }
+        }
+    },
+    "acls": [],
+    "methods": {}
+}
