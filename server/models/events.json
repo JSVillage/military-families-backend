@@ -20,7 +20,7 @@
     "address": {
       "type": "embedsOne",
       "model": "Address",
-      "property": "address",
+      "property": "eventAddress",
       "options": {
         "validate": true,
         "forceId": false
