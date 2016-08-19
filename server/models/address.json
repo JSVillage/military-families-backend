@@ -3,7 +3,7 @@
   "base": "Model",
   "idInjection": true,
   "properties": {
-    "street": {
+    "address": {
       "type": "string"
     },
     "city": {
@@ -12,7 +12,7 @@
     "state": {
       "type": "string"
     },
-    "zipCode": {
+    "zip": {
       "type": "string"
     }
   },

@@ -12,8 +12,7 @@
       "default": ""
     },
     "date": {
-      "type": "date",
-      "default": ""
+      "type": "date"
     }
   },
   "validations": [],
@@ -21,7 +20,7 @@
     "address": {
       "type": "embedsOne",
       "model": "Address",
-      "property": "eventAddress",
+      "property": "address",
       "options": {
         "validate": true,
         "forceId": false
