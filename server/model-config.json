@@ -42,10 +42,10 @@
   },
   "Address": {
     "dataSource": "MongoDB",
-    "public": true
+    "public": false
   },
   "ForumAnswers": {
     "dataSource": "MongoDB",
-    "public": true
+    "public": false
   }
 }
