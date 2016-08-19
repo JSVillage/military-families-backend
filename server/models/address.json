@@ -4,8 +4,7 @@
   "idInjection": true,
   "properties": {
     "street": {
-      "type": "string",
-      "default": ""
+      "type": "string"
     },
     "city": {
       "type": "string",

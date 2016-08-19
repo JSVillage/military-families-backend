@@ -41,11 +41,11 @@
     "public": true
   },
   "Address": {
-    "dataSource": "MongoDB",
+    "dataSource": "transient",
     "public": false
   },
   "ForumAnswers": {
-    "dataSource": "MongoDB",
+    "dataSource": "transient",
     "public": false
   }
 }
