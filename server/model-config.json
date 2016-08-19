@@ -45,7 +45,7 @@
     "public": false
   },
   "ForumAnswers": {
-    "dataSource": "transient",
+    "dataSource": "MongoDB",
     "public": false
   }
 }
