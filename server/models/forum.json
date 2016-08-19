@@ -15,16 +15,15 @@
             "default": ""
         },
         "date": {
-            "type": "date",
-            "default": ""
+            "type": "date"
         }
     },
     "validations": [],
     "relations": {
-        "forum-answers": {
+        "answers": {
             "type": "embedsMany",
             "model": "ForumAnswers",
-            "property": "forumanswers",
+            "property": "answerList",
             "options": {
                 "validate": true,
                 "forceId": false

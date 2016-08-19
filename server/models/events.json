@@ -4,12 +4,10 @@
   "idInjection": true,
   "properties": {
     "name": {
-      "type": "string",
-      "default": ""
+      "type": "string"
     },
     "description": {
-      "type": "string",
-      "default": ""
+      "type": "string"
     },
     "date": {
       "type": "date"

@@ -2,11 +2,8 @@
     "name": "ForumAnswers",
     "base": "Model",
     "idInjection": true,
-    "options": {
-        "validateUpsert": true
-    },
     "properties": {
-        "answers": {
+        "userAnswers": {
             "type": "string",
             "default": ""
         },
