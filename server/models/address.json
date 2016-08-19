@@ -2,6 +2,9 @@
   "name": "Address",
   "base": "Model",
   "idInjection": true,
+   "options": {
+    "validateUpsert": true
+  },
   "properties": {
     "street": {
       "type": "string",
