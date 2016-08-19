@@ -24,10 +24,6 @@
             "type": "embedsMany",
             "model": "ForumAnswers",
             "property": "answerList",
-            "options": {
-                "validate": true,
-                "forceId": false
-            }
         }
     },
     "acls": [],
