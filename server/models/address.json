@@ -2,25 +2,18 @@
   "name": "Address",
   "base": "Model",
   "idInjection": true,
-   "options": {
-    "validateUpsert": true
-  },
   "properties": {
     "street": {
-      "type": "string",
-      "default": ""
+      "type": "string"
     },
     "city": {
-      "type": "string",
-      "default": ""
+      "type": "string"
     },
     "state": {
-      "type": "string",
-      "default": ""
+      "type": "string"
     },
-    "zip": {
-      "type": "string",
-      "default": ""
+    "zipCode": {
+      "type": "string"
     }
   },
   "validations": [],

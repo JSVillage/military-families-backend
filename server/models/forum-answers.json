@@ -1,6 +1,6 @@
 {
     "name": "ForumAnswers",
-    "base": "Model",
+    "base": "PersistedModel",
     "idInjection": true,
     "properties": {
         "userAnswers": {
