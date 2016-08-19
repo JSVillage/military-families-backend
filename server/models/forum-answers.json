@@ -28,7 +28,7 @@
             },
             "properties": {
                 "name": "name"
-            },
+            }
         }
     },
     "acls": [],
