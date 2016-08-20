@@ -8,6 +8,6 @@
     "port": 27017,
     "database": "militaryresources",
     "name": "MongoDB",
-    "connector": "mongodb"
+    "connector": "loopback-connector-mongod"
   }
 }
