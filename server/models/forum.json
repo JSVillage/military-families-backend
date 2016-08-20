@@ -21,11 +21,9 @@
     "validations": [],
     "relations": {
         "answers": {
-            "type": "embedsMany",
+            "type": "hasMany",
             "model": "ForumAnswers",
-            "scope": {
-                "include": "linked"
-            }
+            "foreignKey": ""
         }
     },
     "acls": [],

@@ -1,26 +1,32 @@
 {
-  "name": "Address",
-  "base": "Model",
-  "idInjection": true,
-  "properties": {
-    "street": {
-      "type": "string"
+    "name": "Address",
+    "base": "Model",
+    "idInjection": true,
+    "properties": {
+        "street": {
+            "type": "string",
+            "default": ""
+        },
+        "city": {
+            "type": "string",
+            "default": ""
+        },
+        "state": {
+            "type": "string",
+            "default": ""
+        },
+        "zip": {
+            "type": "Number"
+        },
+        "latitude": {
+            "type": "Number"
+        },
+        "longitude": {
+            "type": "Number"
+        }
     },
-    "city": {
-      "type": "string",
-      "default": ""
-    },
-    "state": {
-      "type": "string",
-      "default": ""
-    },
-    "zip": {
-      "type": "string",
-      "default": ""
-    }
-  },
-  "validations": [],
-  "relations": {},
-  "acls": [],
-  "methods": {}
+    "validations": [],
+    "relations": {},
+    "acls": [],
+    "methods": {}
 }

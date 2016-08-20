@@ -4,13 +4,16 @@
     "idInjection": true,
     "properties": {
         "name": {
-            "type": "string"
+            "type": "string",
+            "default": ""
         },
         "description": {
-            "type": "string"
+            "type": "string",
+            "default": ""
         },
         "eventDate": {
-            "type": "string"
+            "type": "string",
+            "default": ""
         },
         "presentDate": {
             "type": "date"

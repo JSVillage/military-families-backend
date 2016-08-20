@@ -1,12 +1,8 @@
 {
     "name": "ForumAnswers",
-    "base": "Model",
+    "base": "PersistedModel",
     "idInjection": true,
     "properties": {
-        "id": {
-            "type": "number",
-            "id": true
-        },
         "userAnswers": {
             "type": "string",
             "default": ""
@@ -18,19 +14,13 @@
     },
     "validations": [],
     "relations": {
-        "linked": {
+        "forum": {
             "type": "belongsTo",
-            "options": {
-                "invertProperties": true
-            },
-            "polymorphic": {
-                "idType": "number"
-            },
-            "properties": {
-                "name": "name"
-            }
-        }
-    },
-    "acls": [],
-    "methods": {}
+            "model": "Forum",
+            "foreignKey": ""
+          }
+        },
+        "acls": [],
+        "methods": {}
+
 }
