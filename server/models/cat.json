@@ -1,14 +1,12 @@
 {
-  "name": "dog",
-  "base": "PersistedModel",
+  "name": "cat",
+  "base": "dog",
   "idInjection": true,
   "options": {
     "validateUpsert": true
   },
   "properties": {
-    "dogs": {
-      "type": "string"
-    }
+    "type": "_id"
   },
   "validations": [],
   "relations": {},

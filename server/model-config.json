@@ -51,5 +51,9 @@
   "dog": {
     "dataSource": "MongoDB",
     "public": true
+  },
+  "cat": {
+    "dataSource": "MongoDB",
+    "public": true
   }
 }
