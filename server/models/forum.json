@@ -2,7 +2,6 @@
     "name": "Forum",
     "base": "PersistedModel",
     "idInjection": false,
-   ,
     "properties": {
         "id": {
             "type": "String"
