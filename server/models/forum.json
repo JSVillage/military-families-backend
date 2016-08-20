@@ -1,9 +1,9 @@
 {
     "name": "Forum",
     "base": "PersistedModel",
-    "idInjection": true,
+    "idInjection": false,
     "options": {
-        "validateUpsert": true
+        "validateUpsert": false
     },
     "properties": {
         "id": {
