@@ -17,12 +17,7 @@
         },
         "presentDate": {
             "type": "date"
-        },
-        "id": {
-    "type": "Number",
-    "id": true,
-    "description": "User ID"
-}
+        }
     },
     "validations": [],
     "relations": {
@@ -31,7 +26,7 @@
             "model": "Address",
             "property": "eventAddress",
             "options": {
-                "validate": true,
+                "validate": false,
                 "forceId": false
             }
         }
