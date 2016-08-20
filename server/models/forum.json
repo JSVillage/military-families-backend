@@ -7,7 +7,7 @@
     },
     "properties": {
         "id": {
-            "type": "Number"
+            "type": "number"
         },
         "question": {
             "type": "string",

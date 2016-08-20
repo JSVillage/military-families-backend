@@ -4,7 +4,7 @@
     "idInjection": false,
     "properties": {
        "id": {
-            "type": "Number"
+            "type": "number"
         },
         "userAnswers": {
             "type": "string",
