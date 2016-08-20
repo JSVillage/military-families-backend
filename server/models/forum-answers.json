@@ -20,12 +20,7 @@
             "type": "belongsTo",
             "model": "Forum"
         }
-    },
-    "settings": {
-        "mongodb": {
-            "allowExtendedOperators": true
-        }
-    },
+    }
     "acls": [],
     "methods": {}
 }
