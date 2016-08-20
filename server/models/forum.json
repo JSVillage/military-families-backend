@@ -24,13 +24,9 @@
     "validations": [],
     "relations": {
         "answers": {
-             "type": "hasMany",
+            "type": "hasMany",
             "model": "ForumAnswers",
-            "foreignKey": "",
-            "options": {
-                "validate": true,
-                "forceId": true
-            }
+            "foreignKey": ""
         }
     },
     "acls": [],
