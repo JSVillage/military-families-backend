@@ -1,39 +1,39 @@
 {
-  "name": "Events",
-  "base": "PersistedModel",
-  "idInjection": false,
-  "properties": {
-    "name": {
-      "type": "string",
-      "default": ""
+    "name": "Events",
+    "base": "PersistedModel",
+    "idInjection": false,
+    "properties": {
+        "name": {
+            "type": "string",
+            "default": ""
+        },
+        "description": {
+            "type": "string",
+            "default": ""
+        },
+        "eventDate": {
+            "type": "string",
+            "default": ""
+        },
+        "presentDate": {
+            "type": "date"
+        },
+        "id": {
+            "id": true
+        }
     },
-    "description": {
-      "type": "string",
-      "default": ""
+    "validations": [],
+    "relations": {
+        "address": {
+            "type": "embedsOne",
+            "model": "Address",
+            "property": "eventAddress",
+            "options": {
+                "validate": false,
+                "forceId": false
+            }
+        }
     },
-    "eventDate": {
-      "type": "string",
-      "default": ""
-    },
-    "presentDate": {
-      "type": "date"
-    },
-      "id": {
-      "id": true
-    }
-  },
-  "validations": [],
-  "relations": {
-    "address": {
-      "type": "embedsOne",
-      "model": "Address",
-      "property": "eventAddress",
-      "options": {
-        "validate": false,
-        "forceId": false
-      }
-    }
-  },
-  "acls": [],
-  "methods": {}
+    "acls": [],
+    "methods": {}
 }

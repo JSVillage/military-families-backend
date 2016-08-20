@@ -3,9 +3,9 @@
     "base": "PersistedModel",
     "idInjection": false,
     "properties": {
-      "id": {
-      "id": true
-    },
+        "id": {
+            "id": true
+        },
         "userAnswers": {
             "type": "string",
             "default": ""
