@@ -19,7 +19,7 @@
             "type": "date"
         },
         "id": {
-            "type": "number"
+            "type": "Number"
         }
     },
     "validations": [],
