@@ -1,51 +1,51 @@
 {
-    "_meta": {
-        "sources": [
-            "loopback/common/models",
-            "loopback/server/models",
-            "../common/models",
-            "./models"
-        ],
-        "mixins": [
-            "loopback/common/mixins",
-            "loopback/server/mixins",
-            "../common/mixins",
-            "./mixins"
-        ]
-    },
-    "User": {
-        "dataSource": "db"
-    },
-    "AccessToken": {
-        "dataSource": "db",
-        "public": false
-    },
-    "ACL": {
-        "dataSource": "db",
-        "public": false
-    },
-    "RoleMapping": {
-        "dataSource": "db",
-        "public": false
-    },
-    "Role": {
-        "dataSource": "db",
-        "public": false
-    },
-    "Events": {
-        "dataSource": "MongoDB",
-        "public": true
-    },
-    "Forum": {
-        "dataSource": "MongoDB",
-        "public": true
-    },
-    "Address": {
-        "dataSource": "MongoDB",
-        "public": false
-    },
-    "ForumAnswers": {
-        "dataSource": "MongoDB",
-        "public": false
-    }
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "User": {
+    "dataSource": "MongoDB"
+  },
+  "AccessToken": {
+    "dataSource": "MongoDB",
+    "public": false
+  },
+  "ACL": {
+    "dataSource": "MongoDB",
+    "public": false
+  },
+  "RoleMapping": {
+    "dataSource": "MongoDB",
+    "public": false
+  },
+  "Role": {
+    "dataSource": "MongoDB",
+    "public": false
+  },
+  "Events": {
+    "dataSource": "MongoDB",
+    "public": true
+  },
+  "Forum": {
+    "dataSource": "MongoDB",
+    "public": true
+  },
+  "Address": {
+    "dataSource": "MongoDB",
+    "public": true
+  },
+  "ForumAnswers": {
+    "dataSource": "MongoDB",
+    "public": true
+  }
 }
