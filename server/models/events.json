@@ -1,7 +1,7 @@
 {
     "name": "Events",
     "base": "PersistedModel",
-    "idInjection": true,
+    "idInjection": false,
     "properties": {
         "name": {
             "type": "string",
@@ -17,7 +17,12 @@
         },
         "presentDate": {
             "type": "date"
-        }
+        },
+        "id": {
+    "type": "Number",
+    "id": true,
+    "description": "User ID"
+}
     },
     "validations": [],
     "relations": {
