@@ -3,11 +3,11 @@
     "base": "PersistedModel",
     "idInjection": false,
     "properties": {
-       "id": {
+        "id": {
             "type": "String"
         },
         "userAnswers": {
-            "type": "String",
+            "type": "string",
             "default": ""
         },
         "date": {
