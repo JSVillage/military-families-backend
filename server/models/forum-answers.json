@@ -3,10 +3,10 @@
     "base": "PersistedModel",
     "idInjection": false,
     "properties": {
-        "id": {
-            "id": true,
-            "type": "string"
-        },
+      "id": {
+      "id": true,
+      "type": "number"
+    },
         "userAnswers": {
             "type": "string",
             "default": ""
@@ -20,6 +20,11 @@
         "forum": {
             "type": "belongsTo",
             "model": "Forum"
+        }
+    },
+    "settings": {
+        "mongodb": {
+            "allowExtendedOperators": true
         }
     },
     "acls": [],

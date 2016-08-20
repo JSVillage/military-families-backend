@@ -6,9 +6,8 @@
         "validateUpsert": true
     },
     "properties": {
-        "id": {
-            "id": true,
-            "type": "string"
+       "id": {
+            "type": "number"
         },
         "question": {
             "type": "string",
@@ -20,7 +19,11 @@
         },
         "presentDate": {
             "type": "date"
-        }
+        },
+        "id": {
+      "id": true,
+      "type": "number"
+    }
     },
     "validations": [],
     "relations": {

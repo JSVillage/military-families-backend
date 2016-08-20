@@ -25,9 +25,9 @@
             "type": "Number"
         },
         "id": {
-            "id": true,
-            "type": "string"
-        }
+      "id": true,
+      "type": "number"
+    }
 
     },
     "validations": [],
