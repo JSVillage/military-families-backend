@@ -2,10 +2,7 @@
     "name": "ForumAnswers",
     "base": "PersistedModel",
     "idInjection": false,
-    "properties": {
-        "id": {
-            "type": "number"
-        },
+
         "userAnswers": {
             "type": "String",
             "default": ""
