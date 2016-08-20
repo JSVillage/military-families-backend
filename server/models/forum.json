@@ -26,7 +26,11 @@
         "answers": {
              "type": "hasMany",
             "model": "ForumAnswers",
-            "foreignKey": ""
+            "foreignKey": "",
+            "options": {
+                "validate": true,
+                "forceId": true
+            }
         }
     },
     "acls": [],

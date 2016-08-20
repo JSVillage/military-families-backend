@@ -19,11 +19,7 @@
         "forum": {
             "type": "belongsTo",
             "model": "Forum",
-            "foreignKey": "",
-            "options": {
-                "validate": true,
-                "forceId": true
-            }
+            "foreignKey": ""
         }
     },
     "acls": [],
