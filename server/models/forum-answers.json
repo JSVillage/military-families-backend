@@ -3,7 +3,9 @@
     "base": "PersistedModel",
     "idInjection": false,
     "properties": {
-
+        "id": {
+            "type": "number"
+        },
         "userAnswers": {
             "type": "string",
             "default": ""
@@ -16,8 +18,7 @@
     "relations": {
         "forum": {
             "type": "belongsTo",
-            "model": "Forum",
-            "foreignKey": ""
+            "model": "Forum"
         }
     },
     "acls": [],
