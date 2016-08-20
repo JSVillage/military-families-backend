@@ -25,12 +25,12 @@
             "type": "Number"
         },
         "id": {
-            "id": true
+            "type": "number"
         }
 
-    },
+},
     "validations": [],
-    "relations": {},
-    "acls": [],
-    "methods": {}
+"relations": {},
+"acls": [],
+"methods": {}
 }
