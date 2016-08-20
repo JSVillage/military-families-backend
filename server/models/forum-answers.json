@@ -21,10 +21,11 @@
             "model": "Forum"
         }
     },
-    "settings": {
-        "mongodb": {
-            "allowExtendedOperators": true
-        },
+   "settings": {
+    "mongodb": {
+      "allowExtendedOperators": true
+    }
+  },
 
 
         "acls": [],
