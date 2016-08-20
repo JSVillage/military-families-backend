@@ -24,7 +24,7 @@
     "validations": [],
     "relations": {
         "answers": {
-             "type": "hasMany",
+             "type": "belongsTo",
             "model": "ForumAnswers",
             "foreignKey": ""
         }
