@@ -5,7 +5,7 @@
     "properties": {
         "id": {
             "type": "Number"
-        }
+        },
         "userAnswers": {
             "type": "string",
             "default": ""
