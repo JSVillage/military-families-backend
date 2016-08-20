@@ -21,6 +21,11 @@
     },
     "validations": [],
     "relations": {
+        "answers": {
+            "type": "hasMany",
+            "model": "ForumAnswers",
+            "foreignKey": ""
+        }
     },
     "acls": [],
     "methods": {}

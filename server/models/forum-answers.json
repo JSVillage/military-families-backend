@@ -17,7 +17,8 @@
         "forum": {
             "type": "belongsTo",
             "model": "Forum",
-            "foreignKey": ""
+            "foreignKey": "",
+            "through": ""
         }
     },
     "acls": [],
