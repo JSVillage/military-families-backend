@@ -18,10 +18,10 @@
         "zip": {
             "type": "Number"
         },
-        "latitude": {
+        "lat": {
             "type": "Number"
         },
-        "longitude": {
+        "long": {
             "type": "Number"
         }
     },
