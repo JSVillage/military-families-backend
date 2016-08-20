@@ -1,24 +1,27 @@
 {
-  "name": "ForumAnswers",
-  "base": "PersistedModel",
-  "idInjection": true,
-  "properties": {
-    "userAnswers": {
-      "type": "string",
-      "default": ""
+    "name": "ForumAnswers",
+    "base": "PersistedModel",
+    "idInjection": true,
+    "properties": {
+        "id": {
+            "type": "number"
+        },
+        "userAnswers": {
+            "type": "string",
+            "default": ""
+        },
+        "date": {
+            "type": "date"
+        }
     },
-    "date": {
-      "type": "date"
-    }
-  },
-  "validations": [],
-  "relations": {
-    "forum": {
-      "type": "belongsTo",
-      "model": "Forum",
-      "foreignKey": ""
-    }
-  },
-  "acls": [],
-  "methods": {}
+    "validations": [],
+    "relations": {
+        "forum": {
+            "type": "belongsTo",
+            "model": "Forum",
+            "foreignKey": ""
+        }
+    },
+    "acls": [],
+    "methods": {}
 }

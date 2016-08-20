@@ -47,13 +47,5 @@
   "ForumAnswers": {
     "dataSource": "MongoDB",
     "public": true
-  },
-  "dog": {
-    "dataSource": "MongoDB",
-    "public": true
-  },
-  "cat": {
-    "dataSource": "MongoDB",
-    "public": true
   }
 }
