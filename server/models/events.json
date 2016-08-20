@@ -20,7 +20,7 @@
         },
         "id": {
             "id": true,
-            "type": "number"
+            "type": "string"
         },
     },
     "validations": [],

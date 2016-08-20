@@ -8,7 +8,7 @@
     "properties": {
         "id": {
             "id": true,
-            "type": "number"
+            "type": "string"
         },
         "question": {
             "type": "string",
