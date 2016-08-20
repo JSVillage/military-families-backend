@@ -1,7 +1,7 @@
 {
   "name": "Events",
   "base": "PersistedModel",
-  "idInjection": false,
+  "idInjection": true,
   "properties": {
     "name": {
       "type": "string",
@@ -30,7 +30,7 @@
       "property": "eventAddress",
       "options": {
         "validate": false,
-        "forceId": false
+        "forceId": true
       }
     }
   },
