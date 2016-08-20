@@ -7,11 +7,11 @@
             "type": "String"
         },
         "userAnswers": {
-            "type": "string",
+            "type": "String",
             "default": ""
         },
         "date": {
-            "type": "date"
+            "type": "Date"
         }
     },
     "validations": [],
