@@ -29,6 +29,10 @@
             "foreignKey": ""
         }
     },
+     "settings": {
+    "mongodb": {
+      "allowExtendedOperators": true
+    },
     "acls": [],
     "methods": {}
 }

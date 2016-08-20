@@ -21,6 +21,12 @@
             "model": "Forum"
         }
     },
-    "acls": [],
-    "methods": {}
-}
+    "settings": {
+        "mongodb": {
+            "allowExtendedOperators": true
+        },
+
+
+        "acls": [],
+        "methods": {}
+    }
