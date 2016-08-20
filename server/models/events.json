@@ -19,7 +19,7 @@
             "type": "date"
         },
         "id": {
-            "type": "String",
+            "type": "Number",
             "length": 20,
             "id": 1
         }
