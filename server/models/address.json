@@ -25,7 +25,7 @@
             "type": "Number"
         },
          "id": {
-            "type": "Number",
+            "type": "number",
             "length": 20,
             "id": 1
         }
