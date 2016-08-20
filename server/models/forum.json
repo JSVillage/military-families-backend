@@ -1,7 +1,7 @@
 {
     "name": "Forum",
     "base": "PersistedModel",
-    "idInjection": false,
+    "idInjection": true,
     "options": {
         "validateUpsert": true
     },
@@ -24,8 +24,9 @@
     "validations": [],
     "relations": {
         "answers": {
-            "type": "hasMany",
-            "model": "ForumAnswers"
+             "type": "hasMany",
+            "model": "ForumAnswers",
+            "foreignKey": ""
         }
     },
     "acls": [],

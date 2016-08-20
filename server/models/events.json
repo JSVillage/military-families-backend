@@ -29,8 +29,8 @@
             "model": "Address",
             "property": "eventAddress",
             "options": {
-                "validate": false,
-                "forceId": false
+                "validate": true,
+                "forceId": true
             }
         }
     },
