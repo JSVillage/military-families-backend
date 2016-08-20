@@ -5,7 +5,7 @@
    ,
     "properties": {
         "id": {
-            "type": "Number"
+            "type": "String"
         },
         "question": {
             "type": "String",
@@ -21,11 +21,6 @@
     },
     "validations": [],
     "relations": {
-        "answers": {
-            "type": "hasMany",
-            "model": "ForumAnswers",
-            "foreignKey": ""
-        }
     },
     "acls": [],
     "methods": {}
