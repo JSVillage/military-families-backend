@@ -1,7 +1,7 @@
 {
     "name": "ForumAnswers",
     "base": "PersistedModel",
-    "idInjection": true,
+    "idInjection": false,
     "properties": {
         "id": {
             "type": "String"
@@ -20,6 +20,10 @@
             "type": "belongsTo",
             "model": "Forum",
             "foreignKey": ""
+        },
+        "options": {
+            "validate": true,
+            "forceId": true
         }
     },
     "acls": [],
