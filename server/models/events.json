@@ -30,7 +30,7 @@
       "property": "eventAddress",
       "options": {
         "validate": false,
-        "forceId": true
+        "forceId": false
       }
     }
   },
