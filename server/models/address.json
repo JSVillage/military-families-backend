@@ -24,8 +24,10 @@
         "long": {
             "type": "Number"
         },
-        "id": {
-            "type": "Number"
+         "id": {
+            "type": "String",
+            "length": 20,
+            "id": 1
         }
 
     },

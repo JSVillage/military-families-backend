@@ -19,7 +19,9 @@
             "type": "date"
         },
         "id": {
-            "type": "Number"
+            "type": "String",
+            "length": 20,
+            "id": 1
         }
     },
     "validations": [],
