@@ -3,24 +3,26 @@
     "base": "PersistedModel",
     "idInjection": false,
     "properties": {
-        "id": {
-            "type": "Number"
+            "id": {
+                "type": "String",
+                "length": 20,
+                "id": 1
+            },
+            "userAnswers": {
+                "type": "string",
+                "default": ""
+            },
+            "date": {
+                "type": "date"
+            }
         },
-        "userAnswers": {
-            "type": "string",
-            "default": ""
-        },
-        "date": {
-            "type": "date"
+        "validations": [],
+        "relations": {
+            "forum": {
+                "type": "belongsTo",
+                "model": "Forum"
+            }
         }
-    },
-    "validations": [],
-    "relations": {
-        "forum": {
-            "type": "belongsTo",
-            "model": "Forum"
-        }
+        "acls": [],
+        "methods": {}
     }
-    "acls": [],
-    "methods": {}
-}
