@@ -7,7 +7,7 @@
             "type": "String"
         },
         "userAnswers": {
-            "type": "string",
+            "type": "String",
             "default": ""
         },
         "date": {
