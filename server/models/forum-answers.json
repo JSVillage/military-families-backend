@@ -1,6 +1,6 @@
 {
     "name": "ForumAnswers",
-    "base": "PersistedModel",
+    "base": "Model",
     "idInjection": false,
     "properties": {
        "id": {
@@ -18,8 +18,7 @@
     "relations": {
         "forum": {
             "type": "belongsTo",
-            "model": "Forum",
-            "foreignKey": ""
+            "model": "Forum"
         }
     },
     "acls": [],
