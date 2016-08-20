@@ -10,15 +10,15 @@
             "type": "String"
         },
         "question": {
-            "type": "string",
+            "type": "String",
             "default": ""
         },
         "description": {
-            "type": "string",
+            "type": "String",
             "default": ""
         },
         "presentDate": {
-            "type": "date"
+            "type": "Date"
         }
     },
     "validations": [],
