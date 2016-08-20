@@ -19,8 +19,9 @@
       "type": "date"
     },
       "id": {
-           "type": "number"
-         }
+      "id": true,
+      "type": "number"
+    },
   },
   "validations": [],
   "relations": {

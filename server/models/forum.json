@@ -7,6 +7,7 @@
     },
     "properties": {
         "id": {
+            "id": true,
             "type": "number"
         },
         "question": {
@@ -29,11 +30,11 @@
             "foreignKey": ""
         }
     },
-     "settings": {
-    "mongodb": {
-      "allowExtendedOperators": true
-    }
-  },
+    "settings": {
+        "mongodb": {
+            "allowExtendedOperators": true
+        }
+    },
 
     "acls": [],
     "methods": {}
