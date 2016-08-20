@@ -1,11 +1,11 @@
 {
     "name": "ForumAnswers",
     "base": "PersistedModel",
-    "idInjection": true,
+    "idInjection": false,
     "properties": {
 
         "userAnswers": {
-            "type": "String",
+            "type": "Number",
             "default": ""
         },
         "date": {
