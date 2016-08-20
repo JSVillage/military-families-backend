@@ -3,7 +3,7 @@
     "base": "PersistedModel",
     "idInjection": false,
     "properties": {
-        "id": {
+       "id": {
             "type": "Number"
         },
         "userAnswers": {
