@@ -3,9 +3,7 @@
     "base": "PersistedModel",
     "idInjection": false,
     "properties": {
-        "id": {
-            "type": "String"
-        },
+
         "question": {
             "type": "String",
             "default": ""
