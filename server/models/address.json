@@ -1,6 +1,7 @@
 {
     "name": "Address",
     "base": "Model",
+    "idInjection": false,
     "properties": {
         "street": {
             "type": "string",
