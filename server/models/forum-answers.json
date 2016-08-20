@@ -5,7 +5,7 @@
     "properties": {
 
         "userAnswers": {
-            "type": "Number",
+            "type": "string",
             "default": ""
         },
         "date": {

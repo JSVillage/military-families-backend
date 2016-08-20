@@ -13,7 +13,7 @@
             "default": ""
         },
         "presentDate": {
-            "type": "Date"
+            "type": "date"
         }
     },
     "validations": [],
