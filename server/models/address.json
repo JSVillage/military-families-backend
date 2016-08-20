@@ -25,9 +25,8 @@
             "type": "Number"
         },
          "id": {
-            "type": "number",
-            "length": 20,
-            "id": 1
+            "type": "Number",
+            "length": 20
         }
 
     },
