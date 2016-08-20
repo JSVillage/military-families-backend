@@ -6,7 +6,9 @@
         "validateUpsert": true
     },
     "properties": {
-
+        "_id": {
+            "type": "String"
+        },
         "question": {
             "type": "String",
             "default": ""
