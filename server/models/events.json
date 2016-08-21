@@ -1,39 +1,36 @@
 {
-    "name": "Events",
-    "base": "PersistedModel",
-    "idInjection": false,
-    "properties": {
-        "name": {
-            "type": "String",
-            "default": ""
-        },
-        "description": {
-            "type": "String",
-            "default": ""
-        },
-        "eventDate": {
-            "type": "String",
-            "default": ""
-        },
-        "presentDate": {
-            "type": "Date"
-        },
-       "id": {
-            "type": "String"
-        }
+  "name": "Events",
+  "base": "PersistedModel",
+  "idInjection": false,
+  "properties": {
+    "name": {
+      "type": "String",
+      "default": ""
     },
-    "validations": [],
-    "relations": {
-        "address": {
-            "type": "embedsOne",
-            "model": "Address",
-            "property": "eventAddress",
-            "options": {
-                "validate": false,
-                "forceId": false
-            }
-        }
+    "description": {
+      "type": "String",
+      "default": ""
     },
-    "acls": [],
-    "methods": {}
+    "eventDate": {
+      "type": "String",
+      "default": ""
+    },
+    "presentDate": {
+      "type": "Date"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "address": {
+      "type": "embedsOne",
+      "model": "Address",
+      "property": "eventAddress",
+      "options": {
+        "validate": false,
+        "forceId": false
+      }
+    }
+  },
+  "acls": [],
+  "methods": {}
 }

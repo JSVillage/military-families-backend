@@ -1,29 +1,28 @@
 {
-    "name": "Forum",
-    "base": "PersistedModel",
-    "idInjection": false,
-    "properties": {
-
-        "question": {
-            "type": "String",
-            "default": ""
-        },
-        "description": {
-            "type": "String",
-            "default": ""
-        },
-        "presentDate": {
-            "type": "date"
-        }
+  "name": "Forum",
+  "base": "Model",
+  "idInjection": false,
+  "properties": {
+    "question": {
+      "type": "String",
+      "default": ""
     },
-    "validations": [],
-    "relations": {
-        "answers": {
-            "type": "hasMany",
-            "model": "ForumAnswers",
-            "foreignKey": ""
-        }
+    "description": {
+      "type": "String",
+      "default": ""
     },
-    "acls": [],
-    "methods": {}
+    "presentDate": {
+      "type": "Date"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "answers": {
+      "type": "hasMany",
+      "model": "ForumAnswers",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
 }
