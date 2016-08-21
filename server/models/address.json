@@ -16,7 +16,7 @@
       "default": ""
     },
     "zip": {
-      "type": "Number"
+      "type": "String"
     },
     "lat": {
       "type": "Number"
