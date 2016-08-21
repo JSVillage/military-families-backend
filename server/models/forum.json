@@ -12,7 +12,9 @@
       "default": ""
     },
     "presentDate": {
-      "type": "Date"
+      "type": "Date",
+      "default": ""
+
     }
   },
   "validations": [],

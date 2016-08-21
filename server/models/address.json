@@ -16,13 +16,19 @@
       "default": ""
     },
     "zip": {
-      "type": "String"
+      "type": "String",
+      "default": ""
+
     },
     "lat": {
-      "type": "Number"
+      "type": "Number",
+      "default": ""
+
     },
     "long": {
-      "type": "Number"
+      "type": "Number",
+      "default": ""
+
     }
   },
   "validations": [],
