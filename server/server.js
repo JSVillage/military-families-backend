@@ -4,6 +4,9 @@ var boot = require('loopback-boot');
 console.log('NODE_ENV: ' + process.env.NODE_ENV);
 
 var app = module.exports = loopback();
+var publicPath = __dirname + '/../public/';
+console.log(publicPath);
+app.use(loopback.static(publicPath));
 
 app.start = function() {
   // start the web server
