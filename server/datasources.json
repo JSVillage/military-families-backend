@@ -4,7 +4,10 @@
     "connector": "memory"
   },
   "MongoDB": {
-    "name": "db",
-    "connector": "memory"
+    "host": "127.0.0.1",
+    "port": 27017,
+    "database": "militaryresources",
+    "name": "MongoDB",
+    "connector": "loopback-connector-mongod"
   }
 }
