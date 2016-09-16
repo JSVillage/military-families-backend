@@ -13,11 +13,11 @@ class HomePage extends Component {
 		    <div className="video-container">
 		        <div className="filter"></div>
 		        <video autoPlay loop className="fillWidth">
-		            <source src="app/coverr-video/Merica.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
-		            <source src="app/coverr-video/Merica.webm" type="video/webm" />Your browser does not support the video tag. I suggest you upgrade your browser.
+		            <source src="./components/coverr-video/Merica.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
+		            <source src="./components/coverr-video/Merica.webm" type="video/webm" />Your browser does not support the video tag. I suggest you upgrade your browser.
 		        </video>
 		        <div className="poster hidden">
-		            <img src="app/coverr-video/Merica.jpg" alt="" />
+		            <img src="./components/coverr-video/Merica.jpg" alt="" />
 		        </div>
 
 		        <div className="row">

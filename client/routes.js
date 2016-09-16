@@ -18,11 +18,10 @@ import JobsContainer from './components/resources/jobs/JobsContainer';
 
 export default(
     <Route path='/' component={MasterPage}>
-
         <IndexRoute component={HomeContainer}/>
         <Route path='services' component={ServicesContainer}/>
         <Route path='events' component={EventsContainer}/>
-        <Route path='submit-event' component={SubmitEventContainer}/>        
+        <Route path='submit-event' component={SubmitEventContainer}/>
         <Route path='forum' component={ForumContainer}/>
         <Route path="forum/:forumId" component={ForumAnswersContainer} />
         <Route path='resources' component={ResourcesContainer} />
