@@ -1,7 +1,8 @@
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
-let extractCSS = new ExtractTextPlugin('stylesheets/[name].css');
-
+var path = require('path');
+var webpack = require('webpack');
+var autoprefixer = require('autoprefixer');
 
 var HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
   template: __dirname + '/client/index.html',
@@ -10,23 +11,38 @@ var HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
 });
 
 module.exports = {
-  entry: [
-    './client/index.js'
-  ],
+  devtool: '#source-map',
+  entry: path.resolve(__dirname + '/client/index.js'),
   output: {
-    path: __dirname + '/public',
-    filename: 'index_bundle.js'
+    path: path.resolve(__dirname + '/public'),
+    filename: 'bundle.js'
   },
   module: {
     loaders: [{
       test: /\.js$/,
-      exclude: /node_modules/,
-      loader: 'babel-loader'
+      loaders: ['babel-loader', 'babel'],
+      include: path.join(__dirname, 'client')
     }, {
-      test: /\.scss$/i,
-      loader: extractCSS.extract(['css', 'sass'])
+      test: /\.s?css$/,
+      loaders: ['style', 'css', 'sass'],
+      include: path.join(__dirname, 'client')
     }]
   },
-  plugins: [HtmlWebpackPluginConfig, extractCSS], 
-  devtool: '#source-map'
+  resolve: {
+    extensions: ['', '.js', '.jsx', '.css'],
+  },
+  postcss: function() {
+    return [autoprefixer];
+  },
+  plugins: [
+    HtmlWebpackPluginConfig,
+    new webpack.optimize.UglifyJsPlugin({
+      compressor: {
+        warnings: false
+      }
+    })
+
+
+  ],
+
 }
