@@ -1,7 +1,6 @@
 import React, { Component, PropTypes } from 'react';
 import {Link} from 'react-router';
 
-require('../stylesheets/styles.css');
 
 class HomePage extends Component {
 

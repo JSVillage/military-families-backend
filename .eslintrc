@@ -1,3 +1,4 @@
 {
-  "extends": "loopback"
+  "extends": ["loopback", "standard", "standard-jsx" ]
+
 }
