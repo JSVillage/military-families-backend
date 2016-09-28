@@ -7,9 +7,7 @@ var HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
 });
 
 module.exports = {
-  entry: [
-    __dirname + '/client/index.js'
-  ],
+  entry: [__dirname + '/client/index.js'],
   output: {
     path: './public',
     filename: 'index_bundle.js'
@@ -23,19 +21,15 @@ module.exports = {
         query: {
           presets: ['es2015']
         }
-      },
-      {
-               test: /\.css$/,
-               exclude: /node_modules/,
-               loader: 'style!css'
-    },
-    {
-        test: /\.(jpe?g|png|gif|svg|jpg)$/i,
-        loaders: [
-            'file?hash=sha512&digest=hex&name=[hash].[ext]',
-            'image-webpack?bypassOnDebug&optimizationLevel=7&interlaced=false'
-        ]
-    }
+      }, {
+        test: /\.css$/,
+        exclude: /node_modules/,
+        loader: 'style!css'
+      }, {
+        test: /\.(png|jpg|gif)$/,
+        loader: "file-loader?name=img/img-[hash:6].[ext]"
+      }
+
     ]
   },
   plugins: [HtmlWebpackPluginConfig],

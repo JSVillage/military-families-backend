@@ -19,7 +19,7 @@ class AboutPage extends Component {
             		</div>
             		<div className="col-md-offset-1 col-md-5">
                         <div id="about-photo">
-                            <img className="img-responsive" src="app/images/groupPhoto.jpg"/>
+                            <img className="img-responsive" src="./images/groupPhoto.jpg"/>
                             <p>From left to right: Moe Lubovac, Milan Prpa, Lizz Jolii, Martin Patino, Charmaine Gurule, Rebecca Snyder, Aaron Fischer</p>
                         </div>
             		</div>
