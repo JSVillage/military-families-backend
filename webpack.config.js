@@ -26,7 +26,7 @@ module.exports = {
         exclude: /node_modules/,
         loader: 'style!css'
       }, {
-        test: /\.(png|jpg|gif)$/,
+        test: /.*\.(gif|png|jpe?g|svg)$/i,
         loader: "file-loader?name=img/img-[hash:6].[ext]"
       }
 

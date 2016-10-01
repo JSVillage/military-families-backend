@@ -1,6 +1,7 @@
 import React, { Component, PropTypes } from 'react';
 import HomePage from './HomePage';
 
+
 class HomeContainer extends Component {
 
     constructor(props) {

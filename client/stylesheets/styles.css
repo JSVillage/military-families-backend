@@ -2,14 +2,14 @@
 	NAVIGATION
 **********************/
 
-.navbar-brand,
+/*.navbar-brand,
 .navbar-nav > li > a {
 	font-size: 1.5em;
 }
 
 .navbar > .container-fluid .navbar-brand {
 	font-size: 2em;
-}
+}*/
 
 /**********************
 	STICKY FOOTER
@@ -55,8 +55,8 @@ footer > p {
 .title-container {
 	margin-top: 35%;
 	text-align: center;
-	color: #262626;
-	text-shadow: 2px 2px 10px white;
+	/*color: #262626;*/
+	/*text-shadow: 2px 2px 10px white;*/
 }
 
 @media (max-device-width: 992px) {
@@ -67,12 +67,12 @@ footer > p {
 
 .title-container > h1 {
 	font-size: 4.5em;
-	font-family: 'Candal', sans-serif;
+	/*font-family: 'Candal', sans-serif;*/
 }
 
 .title-container > h3 {
 	font-size: 2.5em;
-	font-family: 'Candal', sans-serif;
+	/*font-family: 'Candal', sans-serif;*/
 }
 
 .home-page > h2 {
@@ -93,8 +93,8 @@ footer > p {
 ********************/
 .services {
 	min-height: calc(100vh - 90px);
-	background-image: url("../images/flag.gif");
-	background-size: cover;
+	/*background-image: url("../images/flag.gif");*/
+	/*background-size: cover;*/
 }
 
 #services-header > h1,
