@@ -10,12 +10,18 @@ class HomePage extends Component {
 
   render() {
     return <div>
-      <div className="frontpage">
-      <div className="front-heading">
-      <img src={coverImage}/>
+      <div className="main">
+        <img src={coverImage}></img>
+        <div className="front-header-wrapper">
+          <div className="front-name">
+            <span className="first">AZ</span>
+            <span className="second">VET</span>
+            <span className="third">SUPPORT</span>
+          </div>
+          <h1>Find local resources in Arizona</h1>
+          <h3>Mental Health and Events for Support</h3>
+        </div>
       </div>
-      </div>
-
 
       {/*
               Crisis</h2>

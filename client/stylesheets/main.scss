@@ -1,3 +1,48 @@
-// base.scss
-
+// importin base.scss
 @import 'base';
+/****************************
+MAIN-COVER IMAGE
+******************************/
+.main {
+  align-content: center;
+  color: #fff;
+  top: 0;
+  left: 0;
+
+  img {
+    width: 100%;
+    height: 750px;
+    position: absolute;
+    filter: brightness(55%);
+  }
+
+  .front-header-wrapper {
+Error: Source sample is missing.float: left;
+    position: absolute;
+    margin-top: 12em;
+    margin-left:5em;
+
+  }
+}
+
+div {
+  display: block;
+}
+/****************************
+NAVBAR
+******************************/
+.navbar-default {
+  background-color: #fff;
+  background-color: transparent;
+
+  .navbar-brand {
+    font-size: 20px;
+  }
+
+  .navbar-brand:hover {}
+
+  .navbar-nav > li > a {
+    opacity: 1.5;
+    font-size: 14px;
+  }
+}
