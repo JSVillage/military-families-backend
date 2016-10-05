@@ -19,7 +19,9 @@ class EventsPage extends Component {
       <div className="col-sm-8">
         <Link to="submit-event" className="btn btn-primary">Submit Event</Link>
         <Map center={position} zoom={9}>
-          <TileLayer url='http://{s}.tile.osm.org/{z}/{x}/{y}.png' attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'/> {this.props.events.map(event => <Marker key={event.id} position={[event.eventAddress.lat, event.eventAddress.long]}>
+          <TileLayer url='http://{s}.tile.osm.org/{z}/{x}/{y}.png'
+          attribution='&copy;<a href="http://osm.org/copyright">OpenStreetMap</a> contributors'/>
+           {this.props.events.map(event => <Marker key={event.id} position={[event.eventAddress.lat, event.eventAddress.long]}>
             <Popup>
               <span>{event.name}</span>
             </Popup>

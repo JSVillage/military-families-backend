@@ -30187,8 +30187,8 @@
 	              _react2.default.createElement(
 	                _reactLeaflet.Map,
 	                { center: position, zoom: 9 },
-	                _react2.default.createElement(_reactLeaflet.TileLayer, { url: 'http://{s}.tile.osm.org/{z}/{x}/{y}.png', attribution: '© <a href="http://osm.org/copyright">OpenStreetMap</a> contributors' }),
-	                ' ',
+	                _react2.default.createElement(_reactLeaflet.TileLayer, { url: 'http://{s}.tile.osm.org/{z}/{x}/{y}.png',
+	                  attribution: '©<a href="http://osm.org/copyright">OpenStreetMap</a> contributors' }),
 	                this.props.events.map(function (event) {
 	                  return _react2.default.createElement(
 	                    _reactLeaflet.Marker,
@@ -49563,7 +49563,7 @@
 	
 	
 	// module
-	exports.push([module.id, "body,\nhtml {\n  height: 100%; }\n\n/****************************\nMAIN-COVER IMAGE\n******************************/\n.main {\n  margin-top: 40px; }\n  .main .cover {\n    position: relative; }\n  .main .front-header-wrapper {\n    position: absolute;\n    top: 20%;\n    float: left;\n    color: #fff;\n    margin-left: 40px;\n    margin-right: 10px; }\n  .main img {\n    width: 100%;\n    filter: brightness(60%);\n    background-size: cover;\n    height: 100vh; }\n\n.services-home {\n  margin: 10px;\n  padding: 10px; }\n\n.pages {\n  margin-top: 6em; }\n", ""]);
+	exports.push([module.id, "body,\nhtml {\n  height: 100%; }\n\n/****************************\nMAIN-COVER IMAGE\n******************************/\n.main {\n  margin-top: 40px; }\n  .main .cover {\n    position: relative; }\n  .main .front-header-wrapper {\n    position: absolute;\n    top: 20%;\n    float: left;\n    color: #fff;\n    margin-left: 40px;\n    margin-right: 10px; }\n  .main img {\n    width: 100%;\n    filter: brightness(60%);\n    background-size: cover;\n    height: 100vh; }\n\n.services-home {\n  margin: 10px;\n  padding: 10px; }\n\n.pages {\n  margin-top: 6em; }\n\n/**********************\n\tMaps?\n**********************/\n.leaflet-container {\n  height: 600px;\n  width: 80%; }\n\n.tdfield {\n  width: 160px;\n  height: 20px;\n  text-overflow: ellipsis;\n  white-space: nowrap;\n  overflow: hidden; }\n", ""]);
 	
 	// exports
 

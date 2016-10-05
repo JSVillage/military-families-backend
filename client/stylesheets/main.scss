@@ -39,3 +39,21 @@ MAIN-COVER IMAGE
 .pages{
   margin-top:6em;
 }
+
+
+/**********************
+	Maps?
+**********************/
+
+.leaflet-container {
+	height: 600px;
+	width: 80%;
+}
+
+.tdfield{
+	width: 160px;
+	height: 20px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}

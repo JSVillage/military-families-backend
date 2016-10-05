@@ -11,13 +11,11 @@ const EventListItem = (props) => {
                 <h4>{event.name}</h4>
                 <h5>{event.description}</h5>
                 <p>{event.eventAddress.street} {event.eventAddress.city} {event.eventAddress.state} </p> {event.eventAddress.zip}
-
                 <p>{event.date}</p>
             </div>
         </li>
       </div>
     </div>
-
 };
 
 const EventList = (props) => <ul>
