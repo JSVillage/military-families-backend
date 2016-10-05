@@ -27426,38 +27426,162 @@
 	        _react2.default.createElement(
 	          'div',
 	          { className: 'main' },
-	          _react2.default.createElement('img', { src: coverImage }),
 	          _react2.default.createElement(
 	            'div',
-	            { className: 'front-header-wrapper' },
+	            { className: 'cover' },
+	            _react2.default.createElement('img', { src: coverImage }),
 	            _react2.default.createElement(
 	              'div',
-	              { className: 'front-name' },
+	              { className: 'front-header-wrapper', id: 'wrapper' },
 	              _react2.default.createElement(
-	                'span',
-	                { className: 'first' },
-	                'AZ'
+	                'div',
+	                { className: 'front-name' },
+	                _react2.default.createElement(
+	                  'span',
+	                  { className: 'first' },
+	                  'AZ'
+	                ),
+	                _react2.default.createElement(
+	                  'span',
+	                  { className: 'second' },
+	                  'VET'
+	                ),
+	                _react2.default.createElement(
+	                  'span',
+	                  { className: 'third' },
+	                  'SUPPORT'
+	                )
 	              ),
 	              _react2.default.createElement(
-	                'span',
-	                { className: 'second' },
-	                'VET'
+	                'h1',
+	                null,
+	                'Find local resources in Arizona'
 	              ),
 	              _react2.default.createElement(
-	                'span',
-	                { className: 'third' },
-	                'SUPPORT'
+	                'h3',
+	                null,
+	                'Mental Health and Events for Support'
 	              )
-	            ),
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'container' },
 	            _react2.default.createElement(
-	              'h1',
-	              null,
-	              'Find local resources in Arizona'
-	            ),
-	            _react2.default.createElement(
-	              'h3',
-	              null,
-	              'Mental Health and Events for Support'
+	              'div',
+	              { className: 'row centered service' },
+	              _react2.default.createElement(
+	                'div',
+	                { className: 'col-md-4' },
+	                _react2.default.createElement(
+	                  'h3',
+	                  null,
+	                  'Crisis'
+	                ),
+	                _react2.default.createElement(
+	                  'p',
+	                  null,
+	                  'If you are in need of immediate assistance the',
+	                  _react2.default.createElement(
+	                    'a',
+	                    { href: 'http://www.veteranscrisisline.net', target: '_blank' },
+	                    'Veterans Crisis Line'
+	                  ),
+	                  'is available 24/7. Their contact number is 1-800-273-8255.'
+	                ),
+	                _react2.default.createElement(
+	                  'p',
+	                  null,
+	                  _react2.default.createElement(
+	                    'i',
+	                    null,
+	                    '" The Veterans Crisis Line connects Veterans in crisis and their families and friends with qualified, caring Department of Veterans Affairs responders through a confidential toll-free hotline, online chat, or text."'
+	                  )
+	                )
+	              ),
+	              _react2.default.createElement(
+	                'div',
+	                { className: 'col-md-4' },
+	                _react2.default.createElement(
+	                  'h3',
+	                  null,
+	                  'Help'
+	                ),
+	                _react2.default.createElement(
+	                  'p',
+	                  null,
+	                  'The',
+	                  _react2.default.createElement(
+	                    'a',
+	                    { href: 'http://www.phoenix.va.gov/', target: '_blank' },
+	                    'Phoenix VA Health Care Systems'
+	                  ),
+	                  'main facility is located in central Phoenix.'
+	                ),
+	                _react2.default.createElement(
+	                  'p',
+	                  null,
+	                  '650 E. Indian School Rd.'
+	                ),
+	                _react2.default.createElement(
+	                  'p',
+	                  null,
+	                  'Phoenix, AZ 85021'
+	                ),
+	                _react2.default.createElement(
+	                  'p',
+	                  null,
+	                  '602-277-5551'
+	                ),
+	                _react2.default.createElement(
+	                  'p',
+	                  null,
+	                  'Other Vet Centers, clinics, and offices can be found',
+	                  _react2.default.createElement(
+	                    'a',
+	                    { href: 'http://www.va.gov/directory/guide/state.asp?STATE=AZ&dnum=1', target: '_blank' },
+	                    'here'
+	                  ),
+	                  '.'
+	                )
+	              ),
+	              _react2.default.createElement(
+	                'div',
+	                { className: 'col-md-4' },
+	                _react2.default.createElement(
+	                  'h3',
+	                  null,
+	                  'Comradery'
+	                ),
+	                _react2.default.createElement(
+	                  'p',
+	                  null,
+	                  'You are not in this fight alone. The military\'s teamwork philosophy extends beyond the battlefield and into the rest of your lives. Please check out our',
+	                  _react2.default.createElement(
+	                    _reactRouter.Link,
+	                    { to: '/events' },
+	                    'Events'
+	                  ),
+	                  'and',
+	                  _react2.default.createElement(
+	                    _reactRouter.Link,
+	                    { to: '/forum' },
+	                    'Forum'
+	                  ),
+	                  'pages to connect with other veterans.'
+	                ),
+	                _react2.default.createElement(
+	                  'p',
+	                  null,
+	                  'Also check out',
+	                  _react2.default.createElement(
+	                    'a',
+	                    { href: 'https://theveteransdirectory.org/', target: '_blank' },
+	                    'The Veterans Directory'
+	                  ),
+	                  'for more great information to veterans in general.'
+	                )
+	              )
 	            )
 	          )
 	        )
@@ -29737,7 +29861,7 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	function getServices() {
-	    return _axios2.default.get('http://localhost:8080/app/components/services/services.json').then(function (response) {
+	    return _axios2.default.get('http://0.0.0.0:3000/client/components/services/services.json').then(function (response) {
 	        return response.data;
 	    }).catch(function (error) {
 	        throw error;
@@ -30000,7 +30124,7 @@
 	'use strict';
 	
 	Object.defineProperty(exports, "__esModule", {
-	    value: true
+	  value: true
 	});
 	
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -30026,69 +30150,77 @@
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 	
 	var EventsPage = function (_Component) {
-	    _inherits(EventsPage, _Component);
+	  _inherits(EventsPage, _Component);
 	
-	    function EventsPage(props) {
-	        _classCallCheck(this, EventsPage);
+	  function EventsPage(props) {
+	    _classCallCheck(this, EventsPage);
 	
-	        return _possibleConstructorReturn(this, (EventsPage.__proto__ || Object.getPrototypeOf(EventsPage)).call(this, props));
-	    }
+	    return _possibleConstructorReturn(this, (EventsPage.__proto__ || Object.getPrototypeOf(EventsPage)).call(this, props));
+	  }
 	
-	    _createClass(EventsPage, [{
-	        key: 'render',
-	        value: function render() {
-	            var position = [33.45, -112.07];
-	            return _react2.default.createElement(
-	                'div',
-	                null,
-	                _react2.default.createElement(
-	                    'div',
-	                    { className: 'col-sm-4' },
-	                    _react2.default.createElement(_EventList2.default, { events: this.props.events })
-	                ),
-	                _react2.default.createElement(
-	                    'div',
-	                    { className: 'col-sm-8' },
+	  _createClass(EventsPage, [{
+	    key: 'render',
+	    value: function render() {
+	      var position = [33.45, -112.07];
+	      return _react2.default.createElement(
+	        'div',
+	        null,
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'pages' },
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'row' },
+	            _react2.default.createElement(
+	              'div',
+	              { className: 'col-sm-4' },
+	              _react2.default.createElement(_EventList2.default, { events: this.props.events })
+	            ),
+	            _react2.default.createElement(
+	              'div',
+	              { className: 'col-sm-8' },
+	              _react2.default.createElement(
+	                _reactRouter.Link,
+	                { to: 'submit-event', className: 'btn btn-primary' },
+	                'Submit Event'
+	              ),
+	              _react2.default.createElement(
+	                _reactLeaflet.Map,
+	                { center: position, zoom: 9 },
+	                _react2.default.createElement(_reactLeaflet.TileLayer, { url: 'http://{s}.tile.osm.org/{z}/{x}/{y}.png', attribution: '© <a href="http://osm.org/copyright">OpenStreetMap</a> contributors' }),
+	                ' ',
+	                this.props.events.map(function (event) {
+	                  return _react2.default.createElement(
+	                    _reactLeaflet.Marker,
+	                    { key: event.id, position: [event.eventAddress.lat, event.eventAddress.long] },
 	                    _react2.default.createElement(
-	                        _reactRouter.Link,
-	                        { to: 'submit-event', className: 'btn btn-primary' },
-	                        'Submit Event'
-	                    ),
-	                    _react2.default.createElement(
-	                        _reactLeaflet.Map,
-	                        { center: position, zoom: 9 },
-	                        _react2.default.createElement(_reactLeaflet.TileLayer, { url: 'http://{s}.tile.osm.org/{z}/{x}/{y}.png', attribution: '© <a href="http://osm.org/copyright">OpenStreetMap</a> contributors' }),
-	                        ' ',
-	                        this.props.events.map(function (event) {
-	                            return _react2.default.createElement(
-	                                _reactLeaflet.Marker,
-	                                { key: event.id, position: [event.eventAddress.lat, event.eventAddress.long] },
-	                                _react2.default.createElement(
-	                                    _reactLeaflet.Popup,
-	                                    null,
-	                                    _react2.default.createElement(
-	                                        'span',
-	                                        null,
-	                                        event.name
-	                                    )
-	                                )
-	                            );
-	                        })
+	                      _reactLeaflet.Popup,
+	                      null,
+	                      _react2.default.createElement(
+	                        'span',
+	                        null,
+	                        event.name
+	                      )
 	                    )
-	                )
-	            );
-	        }
-	    }]);
+	                  );
+	                })
+	              )
+	            )
+	          )
+	        )
+	      );
+	    }
+	  }]);
 	
-	    return EventsPage;
+	  return EventsPage;
 	}(_react.Component);
 	
 	EventsPage.propTypes = {
-	    events: _react.PropTypes.array.isRequired
+	  events: _react.PropTypes.array.isRequired
 	};
 	
 	EventsPage.defaultProps = {
-	    events: []
+	  events: []
 	};
 	
 	exports.default = EventsPage;
@@ -49403,7 +49535,7 @@
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 	
 	// load the styles
-	var content = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"!!./../../node_modules/css-loader/index.js!./../../node_modules/sass-loader/index.js!./main.scss\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+	var content = __webpack_require__(504);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
 	var update = __webpack_require__(506)(content, {});
@@ -49423,8 +49555,76 @@
 	}
 
 /***/ },
-/* 504 */,
-/* 505 */,
+/* 504 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(505)();
+	// imports
+	
+	
+	// module
+	exports.push([module.id, "body,\nhtml {\n  height: 100%; }\n\n/****************************\nMAIN-COVER IMAGE\n******************************/\n.main {\n  margin-top: 40px; }\n  .main .cover {\n    position: relative; }\n  .main .front-header-wrapper {\n    position: absolute;\n    top: 20%;\n    float: left;\n    color: #fff;\n    margin-left: 40px;\n    margin-right: 10px; }\n  .main img {\n    width: 100%;\n    filter: brightness(60%);\n    background-size: cover;\n    height: 100vh; }\n\n.services-home {\n  margin: 10px;\n  padding: 10px; }\n\n.pages {\n  margin-top: 6em; }\n", ""]);
+	
+	// exports
+
+
+/***/ },
+/* 505 */
+/***/ function(module, exports) {
+
+	/*
+		MIT License http://www.opensource.org/licenses/mit-license.php
+		Author Tobias Koppers @sokra
+	*/
+	// css base code, injected by the css-loader
+	module.exports = function() {
+		var list = [];
+	
+		// return the list of modules as css string
+		list.toString = function toString() {
+			var result = [];
+			for(var i = 0; i < this.length; i++) {
+				var item = this[i];
+				if(item[2]) {
+					result.push("@media " + item[2] + "{" + item[1] + "}");
+				} else {
+					result.push(item[1]);
+				}
+			}
+			return result.join("");
+		};
+	
+		// import a list of modules into the list
+		list.i = function(modules, mediaQuery) {
+			if(typeof modules === "string")
+				modules = [[null, modules, ""]];
+			var alreadyImportedModules = {};
+			for(var i = 0; i < this.length; i++) {
+				var id = this[i][0];
+				if(typeof id === "number")
+					alreadyImportedModules[id] = true;
+			}
+			for(i = 0; i < modules.length; i++) {
+				var item = modules[i];
+				// skip already imported module
+				// this implementation is not 100% perfect for weird media query combinations
+				//  when a module is imported multiple times with different media queries.
+				//  I hope this will never occur (Hey this way we have smaller bundles)
+				if(typeof item[0] !== "number" || !alreadyImportedModules[item[0]]) {
+					if(mediaQuery && !item[2]) {
+						item[2] = mediaQuery;
+					} else if(mediaQuery) {
+						item[2] = "(" + item[2] + ") and (" + mediaQuery + ")";
+					}
+					list.push(item);
+				}
+			}
+		};
+		return list;
+	};
+
+
+/***/ },
 /* 506 */
 /***/ function(module, exports, __webpack_require__) {
 

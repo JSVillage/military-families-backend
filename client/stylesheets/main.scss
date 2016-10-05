@@ -1,48 +1,41 @@
 // importin base.scss
 @import 'base';
+
+body,
+html {
+  height: 100%;
+}
 /****************************
 MAIN-COVER IMAGE
 ******************************/
 .main {
-  align-content: center;
-  color: #fff;
-  top: 0;
-  left: 0;
-
-  img {
-    width: 100%;
-    height: 750px;
-    position: absolute;
-    filter: brightness(55%);
+  margin-top: 40px;
+  .cover {
+    position: relative;
   }
 
   .front-header-wrapper {
-Error: Source sample is missing.float: left;
     position: absolute;
-    margin-top: 12em;
-    margin-left:5em;
+    top: 20%;
+    float: left;
+    color: #fff;
+    margin-left: 40px;
+    margin-right: 10px;
+  }
 
+  img {
+    width: 100%;
+    filter: brightness(60%);
+    background-size: cover;
+    height: 100vh;
   }
 }
 
-div {
-  display: block;
+.services-home{
+  margin: 10px;
+  padding: 10px;
 }
-/****************************
-NAVBAR
-******************************/
-.navbar-default {
-  background-color: #fff;
-  background-color: transparent;
 
-  .navbar-brand {
-    font-size: 20px;
-  }
-
-  .navbar-brand:hover {}
-
-  .navbar-nav > li > a {
-    opacity: 1.5;
-    font-size: 14px;
-  }
+.pages{
+  margin-top:6em;
 }
