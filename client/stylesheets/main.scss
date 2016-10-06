@@ -10,6 +10,7 @@ MAIN-COVER IMAGE
 ******************************/
 .main {
   margin-top: 40px;
+
   .cover {
     position: relative;
   }
@@ -31,29 +32,26 @@ MAIN-COVER IMAGE
   }
 }
 
-.services-home{
+.services-home {
   margin: 10px;
   padding: 10px;
 }
 
-.pages{
-  margin-top:6em;
+.pages {
+  margin-top: 6em;
 }
-
-
 /**********************
 	Maps?
 **********************/
-
 .leaflet-container {
-	height: 600px;
-	width: 80%;
+  height: 600px;
+  width: 80%;
 }
 
-.tdfield{
-	width: 160px;
-	height: 20px;
-	text-overflow: ellipsis;
-	white-space: nowrap;
-	overflow: hidden;
+.tdfield {
+  width: 160px;
+  height: 20px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
