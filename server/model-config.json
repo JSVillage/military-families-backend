@@ -18,19 +18,19 @@
   },
   "AccessToken": {
     "dataSource": "MongoDB",
-    "public": false
+    "public": true
   },
   "ACL": {
     "dataSource": "MongoDB",
-    "public": false
+    "public": true
   },
   "RoleMapping": {
     "dataSource": "MongoDB",
-    "public": false
+    "public": true
   },
   "Role": {
     "dataSource": "MongoDB",
-    "public": false
+    "public": true
   },
   "Events": {
     "dataSource": "MongoDB",
