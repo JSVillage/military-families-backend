@@ -28,7 +28,7 @@ class HomePage extends Component {
             <div className="col-md-4">
               <h3>Crisis</h3>
               <p>If you are in need of immediate assistance the
-                <a href="http://www.veteranscrisisline.net" target="_blank">Veterans Crisis Line</a>
+               <a href="http://www.veteranscrisisline.net" target="_blank">Veterans Crisis Line</a>
                 is available 24/7. Their contact number is 1-800-273-8255.</p>
               <p>
                 <i>" The Veterans Crisis Line connects Veterans in crisis and their families and friends with qualified, caring Department of Veterans Affairs responders through a confidential toll-free hotline, online chat, or text."</i>
