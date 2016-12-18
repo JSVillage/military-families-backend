@@ -2,7 +2,7 @@ import axios from 'axios';
 
 export function getQuestions() {
     return axios
-        .get("https://azvetapi.herokuapp.com/api/forums")
+        .get("/api/forums")
         .then(response => response.data)
         .catch(error => {
             throw (error)
@@ -11,7 +11,7 @@ export function getQuestions() {
 
 export function getQuestion(forumId) {
     return axios
-        .get(`https://azvetapi.herokuapp.com/api/forums/${forumId}`)
+        .get(`/api/forums/${forumId}`)
         .then(response => response.data)
         .catch(error => {
             throw (error)
@@ -20,7 +20,7 @@ export function getQuestion(forumId) {
 
 export function postQuestion(model) {
     return axios
-        .post("https://azvetapi.herokuapp.com/api/forums", model)
+        .post("/api/forums", model)
         .then(response => response.data)
         .catch(error => {
             throw (error)
@@ -29,7 +29,7 @@ export function postQuestion(model) {
 
 export function getAnswers(forumId) {
     return axios
-        .get(`https://azvetapi.herokuapp.com/api/forums/${forumId}/answers`)
+        .get(`/api/forums/${forumId}/answers`)
         .then(response => response.data)
         .catch(error => {
             throw (error)
@@ -38,7 +38,7 @@ export function getAnswers(forumId) {
 
 export function postAnswers(forumId, model) {
     return axios
-        .post(`https://azvetapi.herokuapp.com/api/forums/${forumId}/answers`, model)
+        .post(`/api/forums/${forumId}/answers`, model)
         .then(response => response.data)
         .catch(error => {
             throw (error)

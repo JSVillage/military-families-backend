@@ -1,6 +1,6 @@
 import React, {Component, PropTypes} from 'react';
 import {Link} from 'react-router';
-import * as actions from './forumAction';
+import * as actions from './ForumAction';
 
 class ForumAnswersContainer extends Component {
     constructor(props) {

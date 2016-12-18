@@ -1,5 +1,5 @@
 import React, {Component, PropTypes} from 'react';
-import * as actions from './forumAction';
+import * as actions from './ForumAction';
 import ForumPage from './ForumPage';
 
 class ForumContainer extends Component {
